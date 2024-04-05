@@ -1,3 +1,5 @@
+# SIMULATION does not include front-row back-row mechanism
+
 import random
 
 class Ship:
@@ -27,10 +29,10 @@ class Ship:
     def calculate_damage(self, opponent):
         if self.attack < opponent.protection:
             # change to 0.6 => 0.7, max 1
-            return max(1, self.attack - (opponent.protection - self.attack) * 0.8)
+            return max(2, self.attack - (opponent.protection - self.attack) * 0.3)
         else:
             # change to 0.3 => 0.5
-            return max(0, self.attack - opponent.protection * 0.5)
+            return self.attack - opponent.protection * 0.8
 
     def calculate_dodge_chance(self, attacker_attack):
         if self.protection >= attacker_attack:
@@ -40,7 +42,7 @@ class Ship:
 
     def apply_critical_outcome(self, damage):
         critical_hit_chance = 0.1  # 10% chance for a critical hit
-        critical_miss_chance = 0.3  # 5% chance for a critical miss
+        critical_miss_chance = 0.35  # 35% chance for a critical miss
         
         if random.random() < critical_miss_chance:
             return 0, "miss"  # Critical miss negates all damage
