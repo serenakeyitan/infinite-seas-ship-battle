@@ -47,7 +47,7 @@ class Ship:
         damage = max(0, damage)  # Ensure damage is not negative
         
         # Critical hit and miss logic
-        critical_hit_chance = 0.1  # 10% chance for a critical hit
+        critical_hit_chance = 0.2  # 10% chance for a critical hit
         critical_miss_chance = 0.35  # 5% chance for a critical miss
         
         if random.random() < critical_miss_chance:
@@ -118,6 +118,15 @@ def simulate_battle(team1_ships, team2_ships):
                         print(f"\nAll ships of one side have been destroyed. Team {winning_team} wins!")
                         return
         
+        # report HP values after each round
+        print(f"\nRound {round} HP Report:")
+        for ship in all_ships:
+            if ship.hp > 0:
+                print(f"{ship.name} HP: {ship.hp}")
+            else:
+                print(f"{ship.name} has been destroyed.")
+
+        round += 1
         if not any(s.hp > 0 for s in team2_ships) or not any(s.hp > 0 for s in team1_ships):
             break
         round += 1
