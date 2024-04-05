@@ -126,7 +126,6 @@ def simulate_battle(team1_ships, team2_ships):
             else:
                 print(f"{ship.name} has been destroyed.")
 
-        round += 1
         if not any(s.hp > 0 for s in team2_ships) or not any(s.hp > 0 for s in team1_ships):
             break
         round += 1
