@@ -24,16 +24,16 @@ Ensure you have **Python 3.x** installed on your system.
 ### Installation
 Clone the game repository to your local machine:
 
-\`\`\`sh
+\`\`sh
 git clone https://github.com/yourusername/ship_battle.git
 cd ship_battle
-\`\`\`
+\`\`
 
 ### Running the Game
 Start the game by executing:
 
-\`\`\`sh
+\`\`sh
 python3 main.py
-\`\`\`
+\`\`
 
 Follow terminal prompts to set up your fleet and navigate through the game. Each decision from ship customization to strategic positioning can tip the scales in your favor. Dive in and command your fleet to victory!
