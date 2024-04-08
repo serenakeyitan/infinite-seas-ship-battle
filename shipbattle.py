@@ -47,8 +47,8 @@ class Ship:
         damage = max(0, damage)  # Ensure damage is not negative
         
         # Critical hit and miss logic
-        critical_hit_chance = 0.2  # 10% chance for a critical hit
-        critical_miss_chance = 0.35  # 5% chance for a critical miss
+        critical_hit_chance = 0.2  # 20% chance for a critical hit
+        critical_miss_chance = 0.35  # 35% chance for a critical miss
         
         if random.random() < critical_miss_chance:
             # Critical miss negates all damage
