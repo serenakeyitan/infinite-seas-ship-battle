@@ -32,6 +32,6 @@ cd ship_battle``
 Start the game by executing:
 
 ``
-python3 main.py``
+python3 shipbattle.py``
 
 Follow terminal prompts to set up your fleet and navigate through the game. Each decision from ship customization to strategic positioning can tip the scales in your favor. 
