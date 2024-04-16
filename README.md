@@ -25,7 +25,7 @@ Ensure you have **Python 3.x** installed on your system.
 Clone the game repository to your local machine:
 
 
-``git clone https://github.com/yourusername/ship_battle.git
+``git clone https://github.com/serenakeyitan/infinite-seas-ship-battle.git
 cd ship_battle``
 
 ### Running the Game
